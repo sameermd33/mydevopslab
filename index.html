@@ -1,84 +1,119 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Elastic Beanstalk</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mohammad Sameer</title>
     <style>
-      body {
-        color: #ffffff;
-        font-family: Arial, sans-serif;
-        font-size:14px;
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: none;
-      }
-      body.blurry {
-        -moz-transition-property: text-shadow;
-        -moz-transition-duration: 4s;
-        -webkit-transition-property: text-shadow;
-        -webkit-transition-duration: 4s;
-        text-shadow: #fff 0px 0px 25px;
-      }
-      a {
-        color: #55aaff;
-      }
-      .textColumn, .linksColumn {
-        padding: 2em;
-      }
-      .textColumn {
-        position: absolute;
-        top: 0px;
-        right: 50%;
-        bottom: 0px;
-        left: 0px;
-
-        text-align: right;
-        padding-top: 11em;
-        background-color: blue;
-
-      }
-      .textColumn p {
-        width: 75%;
-        float:right;
-      }
-      .linksColumn {
-        position: absolute;
-        top:0px;
-        right: 0px;
-        bottom: 0px;
-        left: 50%;
-
-        background-color: #33342D;
-      }
-
-      h1 {
-        color: #33342D;
-        font-size: 500%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      h2 {
-        font-size: 200%;
-        font-weight: normal;
-        margin-bottom: 0em;
-      }
-      ul {
-        padding-left: 1em;
-        margin: 0px;
-      }
-      li {
-        margin: 1em 0em;
-      }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(to bottom right, #2a5298, #1e3c72);
+        }
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin-bottom: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+        .hero h3 {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: #a8d0e6;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .projects, .achievements {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            color: #a8d0e6;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #eaeaea;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3c72;
+            margin-top: 30px;
+        }
+        a {
+            color: #a8d0e6;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
-  </head>
-  <body>
-    <div class="textColumn">
-      <h1>Congratulations</h1>
-      <p>Your first AWS Elastic Beanstalk Node.js application is now running on your own dedicated environment in the AWS Cloud</p>
+</head>
+<body>
+    <div class="hero">
+        <img src="https://via.placeholder.com/150" alt="Your Image">
+        <h1>Mohammad Sameer</h1>
+        <h3>AI Enthusiast | Python Developer | Problem Solver</h3>
     </div>
-    <div class="linksColumn">
-      <h2>Sameer Mohammad</h2>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Hear Me Home - IoT + ML</h3>
+                <p>Enhanced door access security by 30% with voice and facial recognition using Raspberry Pi and CNNs.</p>
+            </div>
+            <div class="card">
+                <h3>Devil's Revenge</h3>
+                <p>Anonymous web app supporting 500+ users, improving backend security and reducing server response times.</p>
+            </div>
+        </div>
     </div>
-  </body>
+
+    <div class="section">
+        <h2>Achievements</h2>
+        <div class="achievements">
+            <div class="card">
+                <h3>1st Place - AI Club Project Expo</h3>
+                <p>Recognized for exceptional project management and creativity. Earned ₹2,000 prize.</p>
+            </div>
+            <div class="card">
+                <h3>2nd Place - SRK College Project Exhibition</h3>
+                <p>Awarded ₹2,000 cash reward for outstanding project presentation.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact: <a href="mailto:sameermd12q@gmail.com">sameermd12q@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sameer-mohammad-b5b11a1b4">linkedin.com/in/sameer-mohammad</a></p>
+        <p>GitHub: <a href="https://github.com/sameermd33">github.com/sameermd33</a></p>
+    </footer>
+</body>
 </html>
